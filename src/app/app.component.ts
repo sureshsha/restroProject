@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'restro';
+  displayItem =  'recipe';
+
+  show(data: string) {
+    this.displayItem = data;
+    console.log(data)
+  }
 }
